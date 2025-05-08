@@ -40,8 +40,10 @@ services:
       KC_HOSTNAME: sso.sifc.sn
       KC_HOSTNAME_ADMIN: sso.sifc.sn
       KC_FEATURES: hostname
+      KC_PROXY: edge
       KC_HTTP_ENABLED: "false"
-      KC_HOSTNAME_STRICT: true
+      KC_HOSTNAME_STRICT: "false"
+      KC_HOSTNAME_STRICT_HTTPS: "false"
       KC_HTTPS_CERTIFICATE_FILE: /etc/x509/https/tls.crt
       KC_HTTPS_CERTIFICATE_KEY_FILE: /etc/x509/https/tls.key
     volumes:
